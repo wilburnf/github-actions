@@ -15,9 +15,9 @@ jobs:
            run:  echo "Hello $USER"
 
     details:
-        runs-on: ubuntu-latest
-        steps:
-         - name: Display Docker & Python version
-         - run: docker --version && python --version
+       runs-on: ubuntu-latest
+       steps:
+          - name: version of Docker and Python
+            run: docker --version && python --version
          
            
