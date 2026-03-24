@@ -32,6 +32,7 @@ jobs:
             - name: Test the Code
               run: echo "Testing Code"
     deploy:
+        if: ${{ inputs.environment == 'dev' }}
         needs: [build,test]
         runs-on: ubuntu-latest
         steps:
